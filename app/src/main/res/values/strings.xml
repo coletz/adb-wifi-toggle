@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AdbWifiToggle</string>
+    <string name="adb_wireless_no_network_msg">Not connected to Wifi network, cannot enable ADB over Wifi</string>
+    <string name="missing_write_secure_settings_permission">Missing WRITE_SECURE_SETTINGS permission, cannot enable ADB Wifi; manually connect to ADB and run the following command:\n\nadb shell "pm grant dev.coletz.adbwifi android.permission.WRITE_SECURE_SETTINGS"\n\n(tap this message to copy it).\n\nOnce done restart this application</string>
+    <string name="channel_name_missing_write_secure_settings_permission">App permission</string>
+    <string name="channel_description_missing_write_secure_settings_permission">This channel is used only to notify if WRITE_SECURE_SETTINGS permission is missing, causing the impossibility of toggling ADB Wifi</string>
+    <string name="adb_quick_settings_tile_label">Wifi Debug</string>
+    <string name="add_tile_label">Add Tile</string>
+    <string name="adb_quick_settings_tile_missing_permission">No permission</string>
+    <string name="adb_quick_settings_tile_no_wifi">No Wifi</string>
+</resources>
