@@ -42,7 +42,7 @@ object NotificationUtils {
 
     private fun Context.notify(message: String) {
         // Use both notification and toast so even if user disabled notification something will happen
-        Toast.makeText(this, R.string.adb_wireless_no_network_msg, Toast.LENGTH_LONG).show()
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show()
 
         val pendingIntent = Intent(this, MainActivity::class.java)
             .apply { flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK }
